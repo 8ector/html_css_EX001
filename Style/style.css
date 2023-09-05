@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&display=swap');
+
+:root
+{
+    --cor-fundo:rgb(0, 195, 255); /* -- sintaze para declarar variaveis*/
+    --cor-texto: black;
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+height: 100vh;
+box-sizing: border-box;
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+
+}
+.cabecalho
+{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu
+{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho__menu__link
+{
+    font-family: 'VT323', monospace;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+span
+{
+    color: var(--cor-texto);
+    border: 10px solid #22D4FD;
+    padding: 2px;
+}
+
+.apresentacao
+{
+    padding: 2%;
+    display:flex;
+    align-items:stretch; /* alinha os blocos pelo centro como referencial ventical*/
+    justify-content:stretch;
+   
+    
+}
+
+.apresentacao__conteudo
+{
+    width: 40%;
+    height: 650px;
+    margin-right:3%;
+    margin-bottom: 3%;
+    border: 3px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:stretch;
+}
+
+.apresentacao__conteudo__titulo
+{
+    font-size:3.125rem;
+    margin: 0;
+    
+}
+
+.apresentacao__conteudo__texto
+{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-family:'Indie Flower', cursive;
+    color:var(--cor-texto);
+
+}
+
+.apresentacao__conteudo__link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    /*gap: 35px;*/
+}
+
+.apresentacao__conteudo__link__subtitulo
+{
+    font-family:'Indie FLower', cursive;
+    color: var(--cor-texto); /* selecionar o trecho desejado + crtl + K + C , comenta o trecho*/
+
+}
+.apresentacao__conteudo__link__botao
+{
+    display: flex;
+    justify-content: center;/*coloca os objetos "filhos" no centro do container"pai"*/
+    gap: 16px;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1.5625rem;
+    padding-top: 20px; /* é possivel escreve asssim "padding: 20px 5px;" desssa maneira o primeiro valor é referente ao padding vetical e o segundo valor é referente ao padding horizontal*/
+    padding-bottom: 20px;
+    text-decoration: none; /* retirar a decoração padrão do link*/
+    color:white;
+    font-family: 'VT323', monospace;
+    font-weight:100; /* espessura da letra*/
+    margin-top: 2%;
+}
+
+.apresentacao__conteudo__link__botao:hover /*hover altera personalização indicada previamente quando passa o mouse por cima*/
+{
+    background-color: orangered;
+} 
+
+span:hover
+{
+    border: 10px solid red;
+    background-color: var(--cor-fundo);
+}
+
+.apresentacao__imagem__gatinho
+{
+ width: 100%;
+ 
+ 
+
+}
+
+.rodape
+{
+    color: var(--cor-fundo);
+    background-color:var(--cor-texto);
+    padding: 25px;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    
+}
+
+@media(max-width: 900px)
+
+{   
+    .cabecalho
+    {
+        padding: 15%;
+    }
+
+    .cabecalho__menu
+    {
+        justify-content: center;
+    }
+
+    .cabecalho__menu__link
+    {
+        font-size: 4rem;
+    }
+    .apresentacao
+    {
+        flex-direction: column-reverse; /*troca a ordem dos elementos*/
+        justify-content:center;
+        padding-left: 3%;
+      
+    }
+
+    .apresentacao__conteudo
+    {
+        width: auto;
+        height: 650px;
+        justify-content:center;
+        margin-right:2%;
+        margin-left:2%;
+        padding: 20px;
+        align-items: center;
+        
+
+    }
+
+    .apresentacao__imagem__gatinho
+    {
+       width: 50%;
+       margin-left: 22%;
+       margin-bottom: 10%;
+    }
+
+}
